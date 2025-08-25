@@ -12,18 +12,18 @@
     <link rel="stylesheet" href="assets/css/style.css" />
     <!-- JS -->
     <script src="assets/js/script.js" defer></script>
-    <!-- Images -->
-    <link rel="img" href="assets/images" />
+    <!-- FontAwesome (wajib untuk icon) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
   
   </head>
-  <body>
-
+<body>
 <!-- Navbar -->
 <nav class="navbar">
   <ul class="nav-links">
     <li><a href="#home">Home</a></li>
     <li><a href="#about">About Me</a></li>
-    <li><a href="#">Proyek Saya</a></li>
+    <li><a href="#keahlian">Proyek Saya</a></li>
     <li><a href="#kritik">Kritik dan Saran</a></li>
   </ul>
   <div class="hamburger" id="hamburger">
@@ -35,7 +35,7 @@
   <ul>
     <li><a href="#home">Home</a></li>
     <li><a href="#about">About Me</a></li>
-    <li><a href="#">Proyek Saya</a></li>
+    <li><a href="#keahlian">Proyek Saya</a></li>
     <li><a href="#kritik">Kritik dan Saran</a></li>
   </ul>
 </div>
@@ -75,6 +75,7 @@
     <div class="swiper-button-prev nav-btn"></div>
     <div class="swiper-pagination"></div>
   </section>
+
   <!-- About Me -->
   <section class="landing" id="about">
     <div class="landing-container">
@@ -91,17 +92,60 @@
       </div>
     </div>
   </section>
+
+  <!-- Proyek Saya -->
+  <section id="proyek" class="proyek-section">
+    <div class="container">
+      <h2 class="section-title">Proyek Saya</h2>
+      <div class="content-wrapper">
+
+        <!-- Bagian Kiri: Proyek -->
+        <div class="proyek-card">
+          <h3>Website Sekolah</h3>
+          <p>Sebuah website sederhana untuk menampilkan informasi sekolah, berita, dan galeri.</p>
+          <a href="#" class="btn-proyek">Lihat Proyek</a>
+        </div>
+
+  <!-- Bagian Kanan: Skill -->
+  <div class="skill-list">
+    <h3>Keahlian Saya</h3>
+    <p>Saya menguasai beberapa bahasa pemrograman berikut:</p>
+    <div class="icons">
+      <div class="skill-item">
+        <i class="fab fa-html5"></i>
+        <span>HTML</span>
+      </div>
+      <div class="skill-item">
+        <i class="fab fa-css3-alt"></i>
+        <span>CSS</span>
+      </div>
+      <div class="skill-item">
+        <i class="fab fa-js"></i>
+        <span>JavaScript</span>
+      </div>
+    </div>
+  </div>
+  </section>
+
+  
   <!-- Kritik dan Saran -->
   <section class="kritik-saran" id="kritik">
     <div class="kritik-saran-container">
       <h2>Kritik dan Saran</h2>
+
       <form action="#">
-        <input type="text" placeholder="Nama" required />
-        <input type="email" placeholder="Email" required />
-        <textarea placeholder="Kritik dan Saran" required></textarea>
+        <label for="nama">Nama (Boleh Disamarkan Jika Anda Mau)</label>
+          <input type="text" id="nama" name="nama" placeholder="Masukkan Nama Anda" required>
+        <label for="email">Email (Tidak Akan Dipublikasikan :Admin)</label>
+          <input type="email" id="email" name="email" placeholder="Email" required>
+        <label for="kritik-saran">Kritik dan Saran</label>
+          <textarea id="kritik-saran" name="kritik-saran" rows="5" 
+          placeholder="Tulis Kritik dan Saran Anda Disini..." required></textarea>
         <button type="submit" class="btn">Kirim</button>
       </form>
+
     </div>
+  </section>
 
   <!-- Swiper JS -->
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
