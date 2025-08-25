@@ -12,92 +12,114 @@
     <link rel="stylesheet" href="assets/css/style.css" />
     <!-- JS -->
     <script src="assets/js/script.js" defer></script>
+    <!-- Images -->
+    <link rel="img" href="assets/images" />
   
   </head>
   <body>
 
-    <!-- Swiper -->
-    <section class="main swiper mySwiper" id="home">
-      <div class="wrapper swiper-wrapper">
-        <div class="slide swiper-slide">
-          <img src="assets/images/bg1A.jpg" alt="" class="image" />
-          <div class="image-data">
-            <span class="text">Hello, Welcome To My Portofolio</span>
-          </div>
-        </div>
-        <div class="slide swiper-slide">
-          <img src="assets/images/bg2.jpg" alt="" class="image" />
-          <div class="image-data">
-            <span class="text">We really like what we do.</span>
-            <h2>
-              Coffee Beans with a <br />
-              Perfect Aroma
-            </h2>
-          </div>
-        </div>
-        <div class="slide swiper-slide">
-          <img src="assets/images/bg3.jpg" alt="" class="image" />
-          <div class="image-data">
-            <span class="text">Making Our coffee with lover.</span>
-            <h2>
-              Alluring and Fragrant <br />
-              Coffee Aroma
-            </h2>
-          </div>
-        </div>
+<!-- Navbar -->
+<nav class="navbar">
+  <ul class="nav-links">
+    <li><a href="#home">Home</a></li>
+    <li><a href="#about">About Me</a></li>
+    <li><a href="#">Proyek Saya</a></li>
+    <li><a href="#kritik">Kritik dan Saran</a></li>
+  </ul>
+  <div class="hamburger" id="hamburger">
+    ☰
+  </div>
+</nav>
+<!-- Sidebar (Mobile Menu) -->
+<div class="sidebar" id="sidebar">
+  <ul>
+    <li><a href="#home">Home</a></li>
+    <li><a href="#about">About Me</a></li>
+    <li><a href="#">Proyek Saya</a></li>
+    <li><a href="#kritik">Kritik dan Saran</a></li>
+  </ul>
+</div>
 
+<!-- Landing Page -->
+  <!-- Swiper / HOME -->
+  <section class="main swiper mySwiper" id="home">
+    <div class="wrapper swiper-wrapper">
+      <div class="slide swiper-slide">
+        <img src="assets/images/bg1A.jpg" alt="" class="image" />
+        <div class="image-data">
+          <span class="text">Hello, Welcome To My Portofolio</span>
+        </div>
       </div>
-      <div class="swiper-button-next nav-btn"></div>
-      <div class="swiper-button-prev nav-btn"></div>
-      <div class="swiper-pagination"></div>
-    </section>
-
-    <!-- Navbar -->
-    <nav class="navbar">
-      <ul class="nav-links">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#">About Me</a></li>
-        <li><a href="#">Proyek Saya</a></li>
-      </ul>
-      <div class="hamburger" id="hamburger">
-        ☰
+      <div class="slide swiper-slide">
+        <img src="assets/images/bg2.jpg" alt="" class="image" />
+        <div class="image-data">
+          <span class="text">TES</span>
+          <h2>
+            ABCDE <br />
+            12345
+          </h2>
+        </div>
       </div>
-    </nav>
-
-    <!-- Sidebar (Mobile Menu) -->
-    <div class="sidebar" id="sidebar">
-      <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#">About Me</a></li>
-        <li><a href="#">Proyek Saya</a></li>
-      </ul>
+      <div class="slide swiper-slide">
+        <img src="assets/images/bg3.jpg" alt="" class="image" />
+        <div class="image-data">
+          <span class="text">Making Our coffee with lover.</span>
+          <h2>
+            Alluring and Fragrant <br />
+            Coffee Aroma
+          </h2>
+        </div>
+      </div>
+    </div>
+    <div class="swiper-button-next nav-btn"></div>
+    <div class="swiper-button-prev nav-btn"></div>
+    <div class="swiper-pagination"></div>
+  </section>
+  <!-- About Me -->
+  <section class="landing" id="about">
+    <div class="landing-container">
+      <div class="landing-text">
+        <h1>Hi, Saya <span>Muhammad Nur Fauzan Akmal</span></h1>
+        <p>
+          Saya seorang front end developer yang suka membuat website interaktif 
+          dan responsif. Portofolio ini berisi karya-karya saya.
+        </p>
+        <a href="#" class="btn">Lihat Proyek Saya</a>
+      </div>
+      <div class="landing-photo">
+        <img src="assets/images/tes-fotoprofil.jpg" alt="Foto Profil">
+      </div>
+    </div>
+  </section>
+  <!-- Kritik dan Saran -->
+  <section class="kritik-saran" id="kritik">
+    <div class="kritik-saran-container">
+      <h2>Kritik dan Saran</h2>
+      <form action="#">
+        <input type="text" placeholder="Nama" required />
+        <input type="email" placeholder="Email" required />
+        <textarea placeholder="Kritik dan Saran" required></textarea>
+        <button type="submit" class="btn">Kirim</button>
+      </form>
     </div>
 
-    <!-- Dummy content biar bisa scroll -->
-    <section style="height:100vh; display:flex; justify-content:center; align-items:center;">
-      <h1>Welcome to My Website</h1>
-    </section>
-    <section style="height:100vh; background:#eee; display:flex; justify-content:center; align-items:center;">
-      <h1>Scroll Down</h1>
-    </section>
-
-    <!-- Swiper JS -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <!-- Initialize Swiper -->
-    <script>
-      var swiper = new Swiper(".mySwiper", {
-        slidesPerView: 1,
-        loop: true,
-        pagination: {
-          el: ".swiper-pagination",
-          clickable: true,
-        },
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        },
-      });
-    </script>
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 1,
+      loop: true,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>
 
   </body>
 </html>
