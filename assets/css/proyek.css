@@ -12,14 +12,15 @@
     }
     
     .navbar h1 {
-      font-size: 1.5rem;
+      font-size: 1.2rem;
       margin: 0;
       color: #fff;
       text-align: center;
+      flex: 1;
     }
     
     .btn-back {
-      position: absolute; /* posisikan ke kiri */
+      position: absolute;
       left: 30px;
       background: #fff;
       color: #0d6efd;
